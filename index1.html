@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Title -->
+    <title>Basic HTML Template</title>
+
+    <!-- Meta Tag for Display (Viewport Settings) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Meta Tag for Character Set -->
+    <meta charset="UTF-8">
+    <!-- embedded styling/internal styling -->
+    <style>
+       h1 {
+            color: darkblue;
+        }
+        h2 {
+            color: rgba(76, 192, 76, 0.979);
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        header {
+            background-color: #4CAF50;
+            padding: 10px;
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        img {
+            width: 200px;
+            height: auto;
+            margin-top: 20px;
+        }
+    </style>
+    <!-- external styling -->
+     <link type="text/css" rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>WELCOME TO THE BASIC HTML TEMPLATE</h1>
+    </header>
+
+    <!-- Main Content -->
+    <section>
+        <!-- Heading -->
+        <h2>Register Here</h2>
+
+        <!-- Paragraph -->
+        <p style="color: black">Please fill in the form below to register and provide your details.</p>
+
+        <!-- Basic Registration Form -->
+        <form action="/submit_registration" method="POST">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone" required><br><br>
+
+            <input type="submit" value="Register">
+        </form>
+
+        <!-- Table Displaying Common User Information -->
+        <h3>User Information Table</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th style="color: blue;">Name</th>
+                    <th style="color: blue;">Email</th>
+                    <th style="color: blue;">Phone Number</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Daniel Oluwatosin</td>
+                    <td>tossyndaniel97@gmail.com</td>
+                    <td>08160629562</td>
+                </tr>
+                <tr>
+                    <td>Daniel Oluwatosin</td>
+                    <td>oluwatosindaniel997@gmail.com</td>
+                    <td>08160629562</td>
+                </tr>
+            </tbody>
+        </table>
+        <br />
+
+        <!-- Image -->
+        <img src="c:\Users\DELL\Desktop\HTML WEEK1 ASSGNMT\_fhdanimals688.jpg" alt="This is a bird" width="300" height="300">
+        <br />
+
+        <!-- External Link to Google -->
+        <p>Visit <a href="https://google.com" target="_blank">Google</a> for more information.</p>
+    </section>
+</body>
+
+</html>
